@@ -1,8 +1,22 @@
 application: ccspwanfang
-version: 1
+version: testcron5
 runtime: python
 api_version: 1
 
 handlers:
+- url: /get/.*
+  script: fetch.py
+  login: admin
+
+- url: /get_data/.*
+  script: fetch.py
+  login: admin
+
+- url: /queue/.*
+  script: fetch.py
+  login: admin
+
 - url: .*
   script: main.py
+
+

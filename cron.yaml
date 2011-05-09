@@ -1,0 +1,4 @@
+cron:
+-   description: fetch data for departments doctor and their time
+    url: /get/
+    schedule: every 6 hours
